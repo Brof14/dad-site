@@ -1,0 +1,301 @@
+/* Hallmark · v2.0.0 · shape: Photographic, Letter (material refuses visit sections) · genre: atmospheric · theme: Spore (deal 3/3, seed one-page-birthday-tribute-centred-48d6·db49464f·2026-10-31·r0) · job: watch the family greeting · draw: dad-birthday-53 · hero: Poster · nav: edge-aligned masthead · footer: colophon · imagery: supplied family photo as the film poster and supplied video · signature: one full-width cinema screen · spore: head-torch, warm ochre accent · axis: centre-biased for Poster */
+/* Hallmark · pre-emit critique: P_ H_ E_ S_ R_ V_ · weakest: the page is intentionally brief; the film carries the story, so the close is a single personal line. */
+@import url("./tokens.css");
+@import url("./base.css");
+
+:root {
+  --color-accent: oklch(77% 0.13 80);
+  --color-accent-2: oklch(84% 0.105 80);
+  --color-focus: oklch(78% 0.19 80);
+  --font-display: Georgia, serif;
+  --font-body: "Segoe UI", sans-serif;
+  --font-outlier: "Segoe UI", sans-serif;
+  --color-paper: oklch(15% 0.012 60);
+  --color-paper-2: oklch(18% 0.014 60);
+  --color-paper-3: oklch(23% 0.018 60);
+  --color-rule: oklch(32% 0.018 68);
+  --tracking-display: -0.028em;
+  --container: 1500px;
+  --gutter: 64px;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--color-paper);
+}
+
+main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.page-shell {
+  display: flex;
+  min-height: 100svh;
+  flex-direction: column;
+}
+
+.container {
+  max-width: var(--container);
+}
+
+.masthead {
+  display: flex;
+  min-height: 76px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-rule);
+}
+
+.wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--color-ink);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.wordmark__seal {
+  display: grid;
+  width: 32px;
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1px solid color-mix(in oklab, var(--color-accent) 72%, var(--color-paper-3) 28%);
+  border-radius: 50%;
+  color: var(--color-accent);
+  font-family: var(--font-display);
+  font-size: 19px;
+  line-height: 1;
+}
+
+.masthead__note {
+  color: var(--color-muted);
+  font-size: var(--text-sm);
+}
+
+.greeting {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: var(--space-2xl);
+}
+
+.greeting__copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: var(--space-xl);
+  text-align: center;
+}
+
+.greeting__dedication {
+  margin-bottom: var(--space-lg);
+  color: var(--color-accent);
+  font-size: var(--text-sm);
+}
+
+.greeting h1 {
+  max-width: 24ch;
+  color: var(--color-ink);
+  font-size: clamp(3rem, 5.2vw, 4.5rem);
+  line-height: 1.04;
+}
+
+.greeting__lead {
+  max-width: 42ch;
+  margin-top: var(--space-lg);
+  color: var(--color-ink-2);
+  font-size: var(--text-lead);
+  line-height: 1.45;
+  text-align: center;
+}
+
+.film {
+  min-width: 0;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0;
+}
+
+.film__screen {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-card);
+  background: var(--color-paper-2);
+  outline: 1px solid color-mix(in oklab, var(--color-ink) 9%, var(--color-paper) 91%);
+  outline-offset: -1px;
+}
+
+.film__screen video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: var(--color-paper);
+}
+
+.film__play {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  display: grid;
+  width: 76px;
+  aspect-ratio: 1;
+  place-items: center;
+  padding: 0;
+  transform: translate(-50%, -50%);
+  border: 1px solid color-mix(in oklab, var(--color-accent) 85%, var(--color-paper-3) 15%);
+  border-radius: 50%;
+  background: color-mix(in oklab, var(--color-paper) 90%, var(--color-paper-3) 10%);
+  color: var(--color-accent);
+  cursor: pointer;
+  transition: background-color var(--dur-short) var(--ease-out), color var(--dur-short) var(--ease-out), opacity var(--dur-short) var(--ease-out);
+}
+
+.film__play:hover {
+  background: var(--color-accent);
+  color: var(--color-accent-ink);
+}
+
+.film__play:active:not(:disabled) {
+  background: var(--color-accent-2);
+  color: var(--color-accent-ink);
+}
+
+.film__play:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.film__play svg {
+  width: 26px;
+  height: 26px;
+  margin-left: var(--space-3xs);
+}
+
+.film__play[hidden] {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.film__caption {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding-top: var(--space-md);
+  color: var(--color-muted);
+  font-size: var(--text-sm);
+}
+
+.film__caption span:first-child {
+  color: var(--color-ink-2);
+}
+
+.closing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: var(--space-xl);
+  border-top: 1px solid var(--color-rule);
+  color: var(--color-ink-2);
+  font-family: var(--font-display);
+  font-size: var(--text-title);
+}
+
+.closing span {
+  color: var(--color-accent);
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+}
+
+.colophon {
+  display: flex;
+  justify-content: space-between;
+  padding-block: var(--space-lg);
+  color: var(--color-muted);
+  font-size: var(--text-xs);
+}
+
+@media (max-width: 60rem) {
+  :root {
+    --gutter: 32px;
+  }
+
+  .greeting h1 {
+    font-size: clamp(3rem, 7vw, 4.5rem);
+  }
+}
+
+@media (max-width: 44rem) {
+  :root {
+    --gutter: 20px;
+  }
+
+  .masthead {
+    min-height: 68px;
+  }
+
+  .masthead__note {
+    max-width: 11ch;
+    text-align: right;
+  }
+
+  .greeting {
+    padding-block: var(--space-2xl) var(--space-xl);
+  }
+
+  .greeting__dedication {
+    margin-bottom: var(--space-md);
+  }
+
+  .greeting h1 {
+    max-width: 14ch;
+    font-size: clamp(2.65rem, 10.5vw, 4.1rem);
+    line-height: 1.03;
+  }
+
+  .desktop-break {
+    display: none;
+  }
+
+  .greeting__lead {
+    max-width: 29ch;
+    margin-top: var(--space-md);
+    font-size: var(--text-md);
+  }
+
+  .film__caption {
+    flex-wrap: wrap;
+    column-gap: var(--space-sm);
+    row-gap: var(--space-xs);
+  }
+
+  .film__play {
+    width: 60px;
+  }
+
+  .closing {
+    gap: var(--space-md);
+    font-size: var(--text-lg);
+  }
+
+  .colophon {
+    gap: var(--space-md);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

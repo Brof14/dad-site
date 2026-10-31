@@ -1,0 +1,26 @@
+[
+ {
+  "shape": "Photographic, Letter",
+  "axes": "dark/roman-serif/warm",
+  "hero": "Poster",
+  "nav": "edge-aligned masthead",
+  "footer": "colophon",
+  "imagery": "supplied family still as the video poster and supplied greeting film",
+  "entry": "one-screen birthday video",
+  "fingerprint": "coffee-dark page, centered family film, ochre signal",
+  "sections": [
+   "masthead",
+   "greeting and player",
+   "short closing statement",
+   "colophon"
+  ],
+  "signature": "one full-width cinema screen",
+  "theme": "Spore, head-torch",
+  "prompt": "Minimal local birthday greeting site centered on one family video",
+  "photos": [
+   "photo_2026-10-31_19-20-43.jpg"
+  ],
+  "date": "2026-10-31",
+  "mode": "build"
+ }
+]

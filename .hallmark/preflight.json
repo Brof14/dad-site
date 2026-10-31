@@ -1,0 +1,15 @@
+{
+  "repository": "https://github.com/Brof14/dad-site",
+  "existingState": "empty public repository on main",
+  "source": "user-provided family photographs and approved greeting-video draft",
+  "audience": "father and family",
+  "purpose": "play one birthday greeting video",
+  "direction": "dark editorial cinema page, coffee-black canvas, parchment type, warm ochre accent",
+  "structure": "masthead, centered greeting, one large video player with supplied photo poster, short sign-off, colophon",
+  "constraints": [
+    "no photo gallery",
+    "do not edit the video",
+    "relative paths for later domain hosting",
+    "no external runtime dependencies"
+  ]
+}

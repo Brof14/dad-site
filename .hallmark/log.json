@@ -1,5 +1,4 @@
-[
- {
+{
   "shape": "Photographic, Letter",
   "axes": "dark/roman-serif/warm",
   "hero": "Poster",
@@ -9,18 +8,23 @@
   "entry": "one-screen birthday video",
   "fingerprint": "coffee-dark page, centered family film, ochre signal",
   "sections": [
-   "masthead",
-   "greeting and player",
-   "short closing statement",
-   "colophon"
+    "masthead",
+    "greeting and player",
+    "short closing statement",
+    "colophon"
   ],
   "signature": "one full-width cinema screen",
   "theme": "Spore, head-torch",
   "prompt": "Minimal local birthday greeting site centered on one family video",
   "photos": [
-   "photo_2026-10-31_19-20-43.jpg"
+    "photo_2026-10-31_19-20-43.jpg"
   ],
-  "date": "2026-10-31",
-  "mode": "build"
- }
-]
+  "date": "2026-11-01",
+  "mode": "build",
+  "verification": [
+    "Hallmark sloplint: 0 FAIL, 0 REFLEX, 0 WARN",
+    "Responsive viewport 390px: no horizontal overflow",
+    "Video loads and starts through the custom play button"
+  ],
+  "publish": "Pushed complete site to Brof14/dad-site main; commit 3e26fba"
+}

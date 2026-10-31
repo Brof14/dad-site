@@ -1,30 +1,29 @@
 {
   "shape": "Photographic, Letter",
-  "axes": "dark/roman-serif/warm",
-  "hero": "Poster",
-  "nav": "edge-aligned masthead",
-  "footer": "colophon",
-  "imagery": "supplied family still as the video poster and supplied greeting film",
+  "axes": "dark/custom roman-serif/warm brass",
+  "hero": "family letter paired with an oversized cinema frame",
+  "nav": "quiet edge-aligned masthead",
+  "footer": "single personal closing line; no colophon",
+  "imagery": "supplied family poster and supplied greeting film only",
   "entry": "one-screen birthday video",
-  "fingerprint": "coffee-dark page, centered family film, ochre signal",
+  "fingerprint": "river-night ink canvas, asymmetric family letter and cinema frame, brass signal",
   "sections": [
-    "masthead",
-    "greeting and player",
-    "short closing statement",
-    "colophon"
+    "quiet masthead",
+    "asymmetric greeting and film",
+    "single short closing and sign-off"
   ],
-  "signature": "one full-width cinema screen",
-  "theme": "Spore, head-torch",
+  "signature": "cinema frame offset by an editorial family letter",
+  "theme": "bespoke: river-night ink, heirloom brass",
   "prompt": "Minimal local birthday greeting site centered on one family video",
-  "photos": [
-    "photo_2026-10-31_19-20-43.jpg"
-  ],
+  "photos": ["assets/poster.jpg"],
   "date": "2026-11-01",
   "mode": "build",
   "verification": [
-    "Hallmark sloplint: 0 FAIL, 0 REFLEX, 0 WARN",
-    "Responsive viewport 390px: no horizontal overflow",
-    "Video loads and starts through the custom play button"
+    "Hallmark sloplint: 0 FAIL, 0 REFLEX, 0 WARN; kept links and script hooks preserved",
+    "Responsive viewports 320, 375, 390, 768, 1280 and 1920px: no horizontal overflow",
+    "Local Cyrillic font files load without font-service requests",
+    "82MB MP4 stays unloaded before play and starts on button click",
+    "Desktop and mobile layouts visually reviewed in browser; no gallery or repeated photos"
   ],
-  "publish": "Pushed complete site to Brof14/dad-site main; commit 3e26fba"
+  "publish": "Redesign pending push to Brof14/dad-site main"
 }

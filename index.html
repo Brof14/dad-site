@@ -3,67 +3,63 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#211b16">
+    <meta name="theme-color" content="#111e25">
     <meta name="description" content="С днём рождения, папа. Семейное видео, собранное с любовью.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="С днём рождения, папа!">
+    <meta property="og:description" content="Все наши тёплые моменты собраны в одном фильме.">
     <title>С днём рождения, папа!</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/fonts/eb-garamond-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
   </head>
   <body>
     <div class="page-shell" id="top">
       <header class="masthead container">
-        <a class="wordmark" href="#top" aria-label="Папе, с любовью. На начало страницы.">
-          <span class="wordmark__seal" aria-hidden="true">П</span>
-          <span>Папе, с любовью</span>
-        </a>
-        <p class="masthead__note">Семейное поздравление</p>
+        <a class="wordmark" href="#top" aria-label="Для папы. На начало страницы.">Для папы</a>
+        <span class="masthead__note">Семейное поздравление</span>
       </header>
 
       <main>
-        <section class="greeting container" aria-labelledby="page-title">
-          <div class="greeting__copy">
-            <p class="greeting__dedication">Для самого родного</p>
-            <h1 id="page-title">С днём рождения, папа!</h1>
-            <p class="greeting__lead">Все наши тёплые моменты собраны в одном фильме.</p>
+        <section class="opening container" aria-labelledby="page-title">
+          <div class="opening__copy">
+            <h1 id="page-title">С днём<br>рождения,<br>папа!</h1>
+            <p class="opening__lead">Все наши тёплые моменты собраны в одном фильме.</p>
           </div>
 
-          <figure class="film" id="film">
+          <figure class="film" id="film" aria-label="Поздравительный фильм">
             <div class="film__screen">
               <video
                 id="greeting-video"
                 controls
                 playsinline
-                preload="metadata"
+                preload="none"
+                width="1920"
+                height="1080"
                 poster="assets/poster.jpg"
                 aria-label="Поздравительное видео для папы"
               >
                 <source src="assets/papa-greeting.mp4" type="video/mp4">
-                Ваш браузер не поддерживает воспроизведение видео. Откройте файл papa-greeting.mp4 напрямую.
+                Ваш браузер не поддерживает воспроизведение видео. Откройте сайт в актуальном браузере.
               </video>
               <button class="film__play" type="button" aria-label="Смотреть поздравление" aria-controls="greeting-video" hidden>
                 <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                  <path d="M8.5 5.7c0-.6.7-1 1.2-.7l9 6.3c.5.3.5 1.1 0 1.4l-9 6.3c-.5.3-1.2-.1-1.2-.7V5.7Z" fill="currentColor"/>
+                  <path d="M8 5.7c0-.8.9-1.2 1.5-.8l9.1 6.2a1.1 1.1 0 0 1 0 1.8l-9.1 6.2c-.6.4-1.5 0-1.5-.8V5.7Z" fill="currentColor"/>
                 </svg>
               </button>
+              <p class="film__status" role="status" aria-live="polite" hidden></p>
             </div>
-            <figcaption class="film__caption">
-              <span>С любовью, твой сын</span>
-              <span>Нажмите, чтобы начать.</span>
-            </figcaption>
           </figure>
         </section>
 
         <section class="closing container" aria-label="Поздравление">
-          <p>Спасибо за всё, что мы пережили вместе.</p>
-          <span>С любовью, твой сын.</span>
+          <p class="closing__thanks">Спасибо за всё, что мы пережили вместе.</p>
+          <p class="closing__signoff">С любовью,<br>твой сын.</p>
         </section>
       </main>
-
-      <footer class="colophon container">
-        <span>Личная видеооткрытка</span>
-        <span>Для папы</span>
-      </footer>
     </div>
   </body>
 </html>

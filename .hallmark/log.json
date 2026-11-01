@@ -3,14 +3,14 @@
   "axes": "dark/custom roman-serif/warm brass",
   "hero": "family letter paired with an oversized cinema frame",
   "nav": "quiet edge-aligned masthead",
-  "footer": "single personal closing line; no colophon",
+  "footer": "one plain-spoken birthday wish; no colophon or signature",
   "imagery": "supplied family poster and supplied greeting film only",
   "entry": "one-screen birthday video",
   "fingerprint": "river-night ink canvas, asymmetric family letter and cinema frame, brass signal",
   "sections": [
     "quiet masthead",
     "asymmetric greeting and film",
-    "single short closing and sign-off"
+    "single plain-spoken closing wish"
   ],
   "signature": "cinema frame offset by an editorial family letter",
   "theme": "bespoke: river-night ink, heirloom brass",
@@ -22,7 +22,8 @@
     "Hallmark sloplint: 0 FAIL, 0 REFLEX, 0 WARN; kept links and script hooks preserved",
     "Responsive viewports 320, 375, 390, 768, 1280 and 1920px: no horizontal overflow",
     "Local Cyrillic font files load without font-service requests",
-    "82MB MP4 stays unloaded before play and starts on button click",
+    "Final 54.5MB H.264/AAC MP4 installed byte-for-byte; preload=none remains in place",
+    "New closing wish uses short direct family language; no signature",
     "Desktop and mobile layouts visually reviewed in browser; no gallery or repeated photos"
   ],
   "publish": "Redesign pending push to Brof14/dad-site main"

@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#efe9df">
     <meta name="description" content="С днём рождения, папа. Семейный фильм и несколько слов от близких.">
     <meta property="og:type" content="website">
@@ -10,6 +10,7 @@
     <meta property="og:description" content="Семейный фильм и поздравление для папы.">
     <title>С днём рождения, папа!</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/poster.jpg" as="image" fetchpriority="high">
     <link rel="preload" href="assets/fonts/eb-garamond-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="fonts.css">
@@ -51,6 +52,12 @@
             <span>Смотреть фильм</span>
           </button>
           <p class="film__status" role="status" aria-live="polite" hidden></p>
+          <p class="film__orientation" role="status" aria-live="polite" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M7 3.75h7.5a2 2 0 0 1 2 2v5.1M17 20.25H9.5a2 2 0 0 1-2-2v-5.1M4.6 9.9A8 8 0 0 1 18 5.2l1.5 1.7m0 0-.1-3.3m.1 3.3-3.3-.4M19.4 14.1A8 8 0 0 1 6 18.8l-1.5-1.7m0 0 .1 3.3m-.1-3.3 3.3.4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
+            </svg>
+            <span>Поверните телефон горизонтально</span>
+          </p>
 
           <div class="hero__meta" aria-label="Продолжительность: 1 минута 25 секунд">
             <span class="hero__meta-rule" aria-hidden="true"></span>

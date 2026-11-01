@@ -1,5 +1,35 @@
 [
   {
+    "shape": "Mobile viewing refinement",
+    "theme": "preserved bespoke film poster",
+    "axes": "portrait-safe title, thumb-sized controls, system safe areas",
+    "hero": "desktop scene unchanged; mobile title sits below faces",
+    "nav": "mobile links retain 48px touch height",
+    "footer": "existing birthday wish stacks on narrow screens",
+    "imagery": "same supplied poster and video; poster preload prioritized",
+    "photos": [
+      "assets/poster.jpg"
+    ],
+    "entry": "keep desktop priority while making portrait phone playback comfortable",
+    "fingerprint": "landscape viewing cue appears only while playing in portrait and clears on rotation or pause",
+    "sections": [
+      "full-screen family film poster",
+      "single birthday wish"
+    ],
+    "signature": "small portrait-only rotate-phone hint; no forced screen lock",
+    "waived": [],
+    "prompt": "Mobile-only refinement requested; preserve desktop composition and ask viewers to rotate to landscape during portrait playback.",
+    "date": "2026-11-01",
+    "mode": "build",
+    "verification": [
+      "Mobile CSS and HTML parsed; site opened through local preview URL",
+      "Hallmark sloplint: 0 FAIL, 0 REFLEX, 0 WARN",
+      "JavaScript syntax and git diff whitespace checks passed",
+      "No forced orientation lock; rotate hint responds to portrait/landscape and pause/play states",
+      "Automated screenshot tier unavailable without puppeteer-core"
+    ]
+  },
+  {
     "shape": "Photographic, Film Poster",
     "theme": "bespoke: obsidian cinema and warm paper",
     "axes": "full-bleed family still, oversized birthday typography, quiet corners",

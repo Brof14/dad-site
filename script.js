@@ -1,14 +1,17 @@
 const video = document.querySelector("#greeting-video");
 const playButton = document.querySelector(".film__play");
 const status = document.querySelector(".film__status");
+const media = document.querySelector(".hero__media");
 
-if (video && playButton && status) {
+if (video && playButton && status && media) {
+  video.controls = false;
   playButton.hidden = false;
 
   playButton.addEventListener("click", async () => {
     status.hidden = true;
     status.textContent = "";
     playButton.disabled = true;
+    video.controls = true;
     try {
       if (video.ended) video.currentTime = 0;
       await video.play();
@@ -21,6 +24,7 @@ if (video && playButton && status) {
   });
 
   video.addEventListener("play", () => {
+    media.classList.add("has-started");
     playButton.hidden = true;
     status.hidden = true;
     status.textContent = "";
@@ -32,6 +36,7 @@ if (video && playButton && status) {
   });
 
   video.addEventListener("ended", () => {
+    media.classList.remove("has-started");
     playButton.hidden = false;
     playButton.setAttribute("aria-label", "Посмотреть поздравление ещё раз");
   });

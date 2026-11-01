@@ -5,10 +5,10 @@
   --text-section: clamp(2rem, 2.5vw + 1rem, 3.5rem); --text-title: clamp(1.25rem, .75vw + .875rem, 1.625rem); --text-lead: clamp(1.125rem, .35vw + 1rem, 1.375rem);
   --ease-out: cubic-bezier(.16, 1, .3, 1); --ease-in: cubic-bezier(.7, 0, .84, 0); --ease-in-out: cubic-bezier(.65, 0, .35, 1);
   --dur-micro: 120ms; --dur-short: 220ms; --dur-long: 420ms;
-  --color-paper: #101a1f; --color-paper-2: #17252b; --color-paper-3: #23343a;
-  --color-ink: #f5f1e8; --color-ink-2: #d9d4c8; --color-muted: #a5aaa6;
-  --color-rule: rgb(230 224 207 / 17%);
-  --color-accent: #d2b06d; --color-accent-2: #e7cb8c; --color-accent-ink: #172127; --color-focus: #f2d697;
+  --color-paper: #efe9df; --color-paper-2: #e8e0d4; --color-paper-3: #d9cdbb;
+  --color-ink: #1d2420; --color-ink-2: #414840; --color-muted: #667068;
+  --color-rule: rgb(29 36 32 / 18%);
+  --color-accent: #a84c32; --color-accent-2: #743621; --color-accent-ink: #fffaf0; --color-focus: #a84c32;
   --color-error: #ffb4a9; --color-success: #a4d4ad;
   --font-display: "EB Garamond", Georgia, serif; --font-body: "Manrope", "Segoe UI", sans-serif; --font-outlier: var(--font-body);
   --container: 1600px; --gutter: clamp(24px, 5.6vw, 88px); --gap-columns: 32px; --section-gap-s: 80px; --section-gap: 120px; --section-gap-l: 160px;

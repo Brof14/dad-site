@@ -1,15 +1,16 @@
 {
   "repository": "https://github.com/Brof14/dad-site",
-  "existingState": "empty public repository on main",
-  "source": "user-provided family photographs and approved greeting-video draft",
-  "audience": "father and family",
-  "purpose": "play one birthday greeting video",
-  "direction": "dark editorial cinema page, coffee-black canvas, parchment type, warm ochre accent",
-  "structure": "masthead, centered greeting, one large video player with supplied photo poster, short sign-off, colophon",
+  "existingState": "Existing static site with supplied family video and poster",
+  "source": "User-provided family photographs and final birthday video",
+  "audience": "Father and family",
+  "purpose": "Play one birthday greeting film",
+  "direction": "Cinematic birthday film premiere inspired by The Odyssey reference, adapted to this family",
+  "structure": "Immersive full-screen movie poster, corner navigation, one play action, short paper-colored birthday wish",
   "constraints": [
     "no photo gallery",
-    "do not edit the video",
+    "do not edit the video or its audio",
     "relative paths for later domain hosting",
-    "no external runtime dependencies"
+    "no external runtime dependencies",
+    "plainspoken birthday greeting, no sentimental boilerplate"
   ]
 }

@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#111e25">
-    <meta name="description" content="С днём рождения, папа. Семейное видео, собранное с любовью.">
+    <meta name="theme-color" content="#efe9df">
+    <meta name="description" content="С днём рождения, папа. Семейный фильм и несколько слов от близких.">
     <meta property="og:type" content="website">
     <meta property="og:title" content="С днём рождения, папа!">
-    <meta property="og:description" content="Все наши тёплые моменты собраны в одном фильме.">
+    <meta property="og:description" content="Семейный фильм и поздравление для папы.">
     <title>С днём рождения, папа!</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="preload" href="assets/fonts/eb-garamond-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
@@ -17,48 +17,61 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="page-shell" id="top">
-      <header class="masthead container">
-        <a class="wordmark" href="#top" aria-label="Для папы. На начало страницы.">Для папы</a>
-        <span class="masthead__note">Семейное поздравление</span>
-      </header>
+    <main class="page-shell" id="top">
+      <section class="hero" id="film" aria-labelledby="page-title">
+        <header class="masthead container">
+          <a class="wordmark" href="#top" aria-label="Для папы. На начало страницы.">Для папы</a>
+          <a class="masthead__link" href="#wish">Поздравление <span aria-hidden="true">↘</span></a>
+        </header>
 
-      <main>
-        <section class="opening container" aria-labelledby="page-title">
-          <div class="opening__copy">
-            <h1 id="page-title">С днём<br>рождения,<br>папа!</h1>
-            <p class="opening__lead">Все наши тёплые моменты собраны в одном фильме.</p>
+        <div class="hero__media">
+          <video
+            id="greeting-video"
+            controls
+            playsinline
+            preload="none"
+            width="1920"
+            height="1080"
+            poster="assets/poster.jpg"
+            aria-label="Поздравительное видео для папы"
+          >
+            <source src="assets/papa-greeting.mp4" type="video/mp4">
+            Ваш браузер не поддерживает воспроизведение видео. Откройте сайт в актуальном браузере.
+          </video>
+          <div class="hero__veil" aria-hidden="true"></div>
+
+          <div class="hero__title-wrap">
+            <h1 id="page-title">С днём<br>рождения,<br><span>папа.</span></h1>
           </div>
 
-          <figure class="film" id="film" aria-label="Поздравительный фильм">
-            <div class="film__screen">
-              <video
-                id="greeting-video"
-                controls
-                playsinline
-                preload="none"
-                width="1920"
-                height="1080"
-                poster="assets/poster.jpg"
-                aria-label="Поздравительное видео для папы"
-              >
-                <source src="assets/papa-greeting.mp4" type="video/mp4">
-                Ваш браузер не поддерживает воспроизведение видео. Откройте сайт в актуальном браузере.
-              </video>
-              <button class="film__play" type="button" aria-label="Смотреть поздравление" aria-controls="greeting-video" hidden>
-                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                  <path d="M8 5.7c0-.8.9-1.2 1.5-.8l9.1 6.2a1.1 1.1 0 0 1 0 1.8l-9.1 6.2c-.6.4-1.5 0-1.5-.8V5.7Z" fill="currentColor"/>
-                </svg>
-              </button>
-              <p class="film__status" role="status" aria-live="polite" hidden></p>
-            </div>
-          </figure>
-        </section>
+          <button class="film__play" type="button" aria-label="Смотреть поздравление" aria-controls="greeting-video" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M8 5.7c0-.8.9-1.2 1.5-.8l9.1 6.2a1.1 1.1 0 0 1 0 1.8l-9.1 6.2c-.6.4-1.5 0-1.5-.8V5.7Z" fill="currentColor"/>
+            </svg>
+            <span>Смотреть фильм</span>
+          </button>
+          <p class="film__status" role="status" aria-live="polite" hidden></p>
 
-        <section class="closing container" aria-label="Поздравление">
-          <p class="closing__thanks">Здоровья, сил и удачи. Давай почаще собираться всей семьёй.</p>
-        </section>
-      </main>
-    </div>
+          <div class="hero__meta" aria-label="Продолжительность: 1 минута 25 секунд">
+            <span class="hero__meta-rule" aria-hidden="true"></span>
+            <span>Семейный фильм</span>
+            <span class="hero__meta-time">01:25</span>
+          </div>
+          <a class="hero__scroll" href="#wish" aria-label="Перейти к поздравлению">
+            <span>Поздравление ниже</span>
+            <span class="hero__scroll-arrow" aria-hidden="true">↓</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="closing container" id="wish" aria-labelledby="wish-title">
+        <div class="closing__mark" aria-hidden="true">02</div>
+        <div class="closing__copy">
+          <h2 id="wish-title">Пап, с днём рождения.</h2>
+          <p>Желаю тебе здоровья, сил и удачи. Пусть всё, за что берёшься, получается.</p>
+        </div>
+        <a class="closing__top" href="#top">В начало <span aria-hidden="true">↑</span></a>
+      </section>
+    </main>
   </body>
 </html>
